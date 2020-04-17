@@ -13,6 +13,7 @@ const SpaceInfo = styled.p`
   color: #0a2352;
   width: 65%;
   text-align: left;
+  font-style: italic;
 `;
 const SpaceAuthor = styled.p`
   color: #0a2352;
@@ -20,10 +21,10 @@ const SpaceAuthor = styled.p`
   font-weight: bold;
 `;
 
-const PodInfo = props => {
+const PodInfo = (props) => {
   return (
     <SpaceAbout className="apod-info">
-      <SpaceInfo>{props.info}</SpaceInfo>
+      <SpaceInfo>"{props.info}</SpaceInfo>
       <SpaceAuthor>© {props.author} </SpaceAuthor>
     </SpaceAbout>
   );
